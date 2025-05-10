@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url('https://img.freepik.com/free-vector/dark-wavy-colors-background_23-2148403785.jpg?ga=GA1.1.565719575.1746796332&semt=ais_hybrid&w=740');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        h1{
+            color: red;
+            text-shadow: 2px 2px 2px black;
+            font-size: 3.5em;
+            text-align: center;
+        }
+
+        main{
+            width: auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img{
+            border: 2px solid green;
+            border-radius: 5px;
+            width: 10vw;
+            height: 20vh;
+            margin: 2vh 10vw;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        img:hover{
+            box-shadow: 4px 4px 4px black;
+        }
+
+
+        h2{
+            text-align: center;
+        }
+
+        @media (max-width:500px){
+            main{
+                grid-template-columns: 1fr 1fr;
+            }
+            img{
+                width: 25vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Projects</h1>
+
+    <main>
+        <a href="Todo/todo.html"><img src="https://img.freepik.com/free-vector/colorful-todo-list-illustration_1308-172724.jpg?ga=GA1.1.1403556167.1746796813&semt=ais_hybrid&w=740" alt="todo-list" id="todo-list"></a>
+    </main>
+</body>
+</html>

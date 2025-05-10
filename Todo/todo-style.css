@@ -1,0 +1,223 @@
+/* default styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(137 101 46);
+    background-image: url('https://img.freepik.com/premium-vector/realistic-neon-lights-background-design_1280668-1983.jpg?ga=GA1.1.470013942.1746795412&semt=ais_hybrid&w=740');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: auto;
+    height: 10vh;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: 1em;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* styling #main_section */
+#main_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 20vh;
+    margin: 3vh auto;
+    margin-bottom: 0px;
+}
+
+#main_section input {
+    padding: 0px 1vw;
+    outline: none;
+    width: 30vw;
+    height: 7vh;
+    border: 2px solid green;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main_section .fa-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 7vh;
+    border: 2px solid rgb(0, 58, 0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    font-size: 1.4em;
+    background-color: rgb(34, 0, 66);
+    color: white;
+}
+
+#main_section .fa-plus:hover {
+    cursor: pointer;
+    background-color: rgb(79 28 127);
+}
+
+/* styling list and its item */
+#list {
+    width: auto;
+    height: auto;
+    padding: 2vh 2vw;
+    margin: 0px auto;
+}
+
+#task {
+    background-color: rgb(0, 85, 255);
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px black;
+    width: 50vw;
+    height: auto;
+    padding: 2vh 1vw;
+    margin: 3vh auto;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+#task div button {
+    padding: 2vh;
+    margin: 1vh 0.4vw;
+    border: none;
+    clip-path: circle();
+}
+
+#features {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#edit {
+    background-color: yellow;
+    font-size: 1em;
+    color: black;
+}
+
+#delete {
+    background-color: red;
+    font-size: 1em;
+    color: white;
+}
+
+#edit:hover {
+    background-color: rgb(3, 0, 59);
+    color: white;
+    cursor: pointer;
+}
+
+#delete:hover {
+    background-color: grey;
+    color: red;
+    cursor: pointer;
+}
+
+/*Update task div styling*/
+#update_task {
+    z-index: 100;
+    border: 2px solid black;
+    width: 40vw;
+    height: 25vh;
+    position: absolute;
+    margin: 40vh 30vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c674f5;
+    box-shadow: 2px 2px 2px black;
+}
+
+#update_task input {
+    width: 30vw;
+    height: 7vh;
+    outline: none;
+    border: 1px solid rgb(0, 80, 73);
+    border-radius: 5px;
+    padding: 0px 1vw;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 2px black;
+}
+
+#update_task button {
+    padding: 2vh 2vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 33, 33);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    box-shadow: 2px 2px 2px black;
+}
+
+#update_task button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media querry for device with viewport less than 500px */
+@media (max-width:500px) {
+    body{
+        background-image: none;
+    }
+    #main_section {
+        width: auto;
+    }
+
+    #main_section input {
+        font-size: 1em;
+        width: 80vw;
+    }
+
+    #main_section .fa-plus {
+        width: 10vw;
+    }
+
+    #task {
+        width: 90vw;
+        padding: 1vh 2vw;
+    }
+
+    #task div button {
+        margin: 1vw;
+    }
+
+    #update_task {
+        width: 90vw;
+        margin: 35vh 5vw;
+    }
+
+    #update_task input {
+        width: 80vw;
+    }
+}
