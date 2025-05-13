@@ -1,0 +1,100 @@
+/* Default styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header styling */
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 41, 56);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* main styling */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 90vh;
+    background-image: url('https://img.freepik.com/premium-photo/blue-modern-futuristic-technology-background-16_769134-458.jpg?ga=GA1.1.2090365064.1747111130&semt=ais_hybrid&w=740');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: auto;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px black;
+    padding: 2vh 2vw;
+}
+
+main section input{
+    width: 22vw;
+    height: 8vh;
+    padding: 0px 1vw;
+    margin: 2vh 0px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    outline: none;
+    font-size: 1.3em;
+    text-align: right;
+    font-weight: 800;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#buttons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    background-color: yellow;
+    margin: 1vh 0px;
+    padding: 3vh 2vw;
+    clip-path: circle();
+}
+
+#buttons div:hover{
+    background-color: green;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width:500px){
+    main section{
+        width: 85vw;
+    }
+
+    main section input{
+        width: 75vw;
+    }
+
+    #buttons div{
+        margin: 1vh 3vw;
+        padding: 3vh 4vw;
+    }
+}

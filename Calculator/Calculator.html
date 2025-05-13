@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- fontawesome linked -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="calculator-style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" placeholder="Calculator" id="input">
+            <div id="buttons">
+                <div onclick="themeChange()"><i class="fa-solid fa-circle-half-stroke"></i></div>
+                <div onclick="copyOutput()"><i class="fa-solid fa-copy"></i></div>
+                <div onclick="allClear()"><i class="fa-solid fa-trash"></i></div>
+                <div onclick="leftClear()"><i class="fa-solid fa-delete-left"></i></div>
+                <div onclick="value(1)">1</div>
+                <div onclick="value(2)">2</div>
+                <div onclick="value(3)">3</div>
+                <div onclick="value('+')"><i class="fa-solid fa-plus"></i></div>
+                <div onclick="value(4)">4</div>
+                <div onclick="value(5)">5</div>
+                <div onclick="value(6)">6</div>
+                <div onclick="value('-')"><i class="fa-solid fa-minus"></i></div>
+                <div onclick="value(7)">7</div>
+                <div onclick="value(8)">8</div>
+                <div onclick="value(9)">9</div>
+                <div onclick="value('*')"><i class="fa-solid fa-xmark"></i></div>
+                <div onclick="value('%')"><i class="fa-solid fa-percent"></i></div>
+                <div onclick="value(0)">0</div>
+                <div onclick="calcualation()">=</div>
+                <div onclick="value('/')"><i class="fa-solid fa-divide"></i></div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="calculator-script.js"></script>
+</body>
+</html>
