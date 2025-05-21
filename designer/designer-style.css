@@ -1,0 +1,269 @@
+/* default styling to each element */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* styling navigation bar of the site */
+nav {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #nav_div1 {
+    margin: 0px 0px 0px 1vw;
+}
+
+nav #nav_div1 h3 {
+    display: inline-block !important;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+    color: blue;
+}
+
+nav #nav_div1 .fa-gear {
+    font-size: 1.9em;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(19, 0, 49);
+}
+
+nav #nav_div2 {
+    margin: 0px 1vw 0px 0px;
+}
+
+nav #nav_div2 button {
+    padding: 0.8vh 1vw;
+    margin: 0px 1vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 83, 135);
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav #nav_div2 button>a{
+    text-decoration: none;
+    color: white;
+}
+
+nav #nav_div2 .fa-user {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+/* styling main of the site */
+section {
+    border: 2px solid black;
+}
+
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main #section1 {
+    width: 20%;
+    height: 93vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+main #section1 h3 {
+    color: black;
+    margin: 1vh 0px;
+    font-family: cursive;
+    text-shadow: 1px 1px 1px grey;
+}
+
+main #section1 .accordion-button {
+    background-color: rgb(203, 203, 203);
+    margin: 5px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.6em;
+    border-radius: 5px;
+}
+
+main #section1 .accordion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main #section1 .accordion-body button {
+    display: block;
+    margin: 5px 0px;
+    width: 18vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(217, 217, 184);
+}
+
+main #section2 {
+    width: 80%;
+    height: 93vh;
+}
+
+main #section2 #div1 {
+    padding: 0px 1vw;
+    background-color: green;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+main #section2 #div1 button {
+    border: none;
+    padding: 0.4vh 1vw;
+    border-radius: 5px;
+    margin: 0px 0.4vw;
+    background-color: rgb(209, 194, 130);
+}
+
+main #section2 #div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+
+main #section2 #div2 article {
+    width: 50%;
+    height: 40vh;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main #section2 #div2 article div{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* hover effects */
+nav #nav_div2 button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 30, 36);
+}
+
+main #section1 .accordion-button:hover {
+    background-color: rgb(153, 153, 153);
+    cursor: pointer;
+    color: red;
+}
+
+main #section1 .accordion-body button:hover {
+    background-color: rgb(186, 191, 196);
+    color: green;
+    cursor: pointer;
+}
+
+main #section2 #div1 button:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+/* styling of section created on click */
+main #section1 header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: whitesmoke;
+    padding: 1vh 1vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+main #section1 img{
+    display: block;
+    width: 40%;
+    margin: 2vh 0px;
+    border-radius: 5px;
+}
+
+main #section1 center span{
+    display: block;
+    width: 40%;
+    height: 10vh;
+    margin: 2vh 0px;
+    border-radius: 5px;
+}
+
+
+main #section1 img:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+main #section1 center span:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+
+
+
+/* media querry for devices viewport less than 500px */
+@media (max-width:500px) {
+
+    /* for navbar */
+    nav #nav_div1 h3,
+    nav #nav_div1 .fa-gear {
+        font-size: 1.2em;
+    }
+
+    nav #nav_div2 {
+        display: none;
+    }
+
+    /* for main */
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main #section1 {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+
+    main #section1 .accordion-body button {
+        width: 80vw;
+    }
+
+    main #section2 {
+        width: 100%;
+    }
+}
